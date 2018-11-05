@@ -1,0 +1,31 @@
+#VRML_SIM V8.6 utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.025911003 0.96671458 0.25454184 3.1653958
+  position 0.082353159 0.92351905 -1.5591767
+}
+Background {
+  skyColor [
+    0.4 0.7 1
+  ]
+}
+DirectionalLight {
+  ambientIntensity 1
+  direction 0.1 -0.5 0.3
+}
+RectangleArena {
+  translation 0.13100698 0 -0.0038421777
+  floorTextureUrl [
+    "textures/wood_grid.jpg"
+  ]
+  floorTileSize 1 1
+}
+E-puck {
+  translation 0.52157137 0 0.35797042
+  controller "epuck_controller"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
