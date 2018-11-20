@@ -3,7 +3,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.025911003 0.96671458 0.25454184 3.1653958
-  position 0.082353159 0.92351905 -1.5591767
+  position 0.48118263 0.47710072 -0.40821184
 }
 Background {
   skyColor [
@@ -23,7 +23,7 @@ RectangleArena {
 }
 E-puck {
   translation 0.52157137 0 0.35797042
-  controller "epuck_controller"
+  controller "e_puck_astar_controller"
   groundSensorsSlot [
     E-puckGroundSensors {
     }
