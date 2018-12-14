@@ -2,7 +2,9 @@
 
 # You may need to import some classes of the controller module. Ex:
 #  from controller import Robot, LED, DistanceSensor
-from controller import Robot
+from controller import *
+#from controller import DifferentialWheels
+
 
 # create the Robot instance.
 robot = Robot()
@@ -12,9 +14,9 @@ timestep = int(robot.getBasicTimeStep())
 
 # You should insert a getDevice-like function in order to get the
 # instance of a device of the robot. Something like:
-#  led = robot.getLED('ledname')
-#  ds = robot.getDistanceSensor('dsname')
-#  ds.enable(timestep)
+  #led = robot.getLED(0)
+ # ds = robot.getDistanceSensor(0)
+  #ds.enable(timestep)
 
 
 # Main loop:
@@ -22,12 +24,15 @@ timestep = int(robot.getBasicTimeStep())
 while robot.step(timestep) != -1:
     # Read the sensors:
     # Enter here functions to read sensor data, like:
-    #  val = ds.getValue()
+    #val = ds.getValue()
 
+    #differentialWheels = DifferentialWheels(robot)
+    #differentialWheels.setSpeed(100,100)
     # Process sensor data here.
-
     # Enter here functions to send actuator commands, like:
-    #  led.set(1)
-    pass
-
+    #led.set(1)
+    #pass
+    log("Test")
+    robot.step();
+    
 # Enter here exit cleanup code.
